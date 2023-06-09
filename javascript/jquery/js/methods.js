@@ -51,11 +51,27 @@
 // parant() parants() sibling() chidren() find() next() nextAll() nextUtil()  prev() prevAll() prevUtil()
 
 
-$(document).ready(()=>{
-    // $("#ptag").parent().css("background" , "black").css("padding","1rem")
-    // $("#ptag").parents().css("background" , "red").css("padding","1rem")
-    // $(".div").children().css("color" , "black").css("padding","1rem")
-    // $("li").siblings().css("color" , "blue").css("padding","1rem")
-    //  $("ul").find("li").css("color" , "black").css("padding","1rem")
+// $(document).ready(()=>{
+//     // $("#ptag").parent().css("background" , "black").css("padding","1rem")
+//     // $("#ptag").parents().css("background" , "red").css("padding","1rem")
+//     // $(".div").children().css("color" , "black").css("padding","1rem")
+//     // $("li").siblings().css("color" , "blue").css("padding","1rem")
+//     //  $("ul").find("li").css("color" , "black").css("padding","1rem")
+//     // $("#orta").next().css("color", "red")
+//     // $("#start").nextAll().css("color","blue")
+//     // $("#start").nextUntil("#orta").css("color", "red")
+//     // $("#orta").prev().css("color", "red")
+//     // $("#orta").prevAll().css("color", "red")
+//     // $("#end").prevUntil("#orta").css("color", "red")
+// })
 
+
+
+// fist() ilk , last() son, eq(indis) belirtileni göstrerir, fiter()  not()
+
+$(document).ready(()=>{
+   $("li").first().css("color", "blue")
+   $("li").last().css("color", "blue")
+   $("li").filter("#orta").css("color","red")
+   $("li").not("#orta").css("color","blue")
 })
